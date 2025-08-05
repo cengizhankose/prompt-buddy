@@ -2,7 +2,7 @@
   "name": "prompt-buddy-cengizhankose",
   "displayName": "Prompt Buddy by Cengo",
   "description": "A prompt helper for writing better prompts in VS Code",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "CengizhanKOSE",
   "repository": {
     "type": "git",
