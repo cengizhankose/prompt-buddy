@@ -1,0 +1,58 @@
+{
+  "name": "prompt-buddy-cengizhankose",
+  "displayName": "Prompt Buddy by Cengo",
+  "description": "A prompt helper for writing better prompts in VS Code",
+  "version": "0.0.1",
+  "publisher": "CengizhanKOSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/prompt-buddy.git"
+  },
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "ai",
+    "prompt",
+    "assistant",
+    "productivity"
+  ],
+  "icon": "images/icon.png",
+  "activationEvents": [
+    "onCommand:promptBuddy.openPanel"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "promptBuddy.openPanel",
+        "title": "Open Prompt Buddy Panel"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "format": "prettier --write src/**/*.ts",
+    "package": "vsce package",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.102.0",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3"
+  }
+}
